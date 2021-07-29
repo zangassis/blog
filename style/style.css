@@ -43,7 +43,7 @@ footer {
 footer > p {
     text-align: center;
     background: rgb(45, 51, 59);
-    line-height: 180px;
+    line-height: 80px;
     padding: 0 20px;
     color: #adbac7;
 }
