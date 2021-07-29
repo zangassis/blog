@@ -1,0 +1,49 @@
+:root{
+    --paper-margin: 60px;
+    --main-color: #4481eb;
+    --my-gradient: linear-gradient(to right, var(--main-color) 0%, #04befe 100%);
+}
+
+body{
+    margin: 0;
+    font-family: 'Open Sans';
+    letter-spacing: 0.05px;
+    font-size: 1.05em;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header{
+    position: relative;
+    color: #adbac7;
+}
+
+header::before{
+    content: "";
+    display: block;
+    background: rgb(45, 51, 59);
+    height: 80px;
+}
+
+header > a {
+    position: absolute;
+    top: 25px;
+    left: max(var(--paper-margin), (100vw - 900px)/2);
+    font-size: 1.6em;
+    font-family: 'Oxanium';
+    color: inherit;
+    text-decoration: inherit;
+}
+
+footer {
+    background: rgb(45, 51, 59);
+}
+
+footer > p {
+    text-align: center;
+    background: rgb(45, 51, 59);
+    line-height: 180px;
+    padding: 0 20px;
+    color: #adbac7;
+}
