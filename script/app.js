@@ -1,5 +1,5 @@
 const username = 'zangassis'
-const perPage = 100; //If you have more articles, increase this or add pagination
+const perPage = 50; //If you have more articles, increase this or add pagination
 
 const getArticles = async () => {
     const response = await fetch(`https://dev.to/api/articles?username=${username}&per_page=${perPage}`);
